@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.linkedin {
+  font-size: 20px;
+  color: #0077b5;
+}
+
+.github {
+  font-size: 20px;
+  color: #24292e;
+  margin-left: 15px;
+}
+.footer p {
+  font-size: 12px;
+}
+
+a svg {
+  transition: 0.5s ease-in-out;
+}
+
+a svg:hover {
+  transform: translateY(-4px);
+}

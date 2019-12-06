@@ -1,0 +1,38 @@
+.titleWrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  align-items: center;
+}
+.title {
+  margin: 0;
+}
+
+.wrapTitleItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.titleFilterWrap {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.titleFilterWrap li {
+  margin-left: 15px;
+  cursor: pointer;
+  padding: 5px 10px;
+  background: #ccc;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+
+.titleFilterWrap li:hover {
+  background: #bb5;
+}
+
+.titleFilterWrap .activeItem {
+  background: #bb5;
+}
