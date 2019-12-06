@@ -4,8 +4,8 @@ let content = [
     tags: ['react', 'bootstrap'],
     id: 1,
     desc: 'app, with firebase auth, and GIF search',
-    demo: 'https://student1311.github.io/giphs-app/build/',
-    code: 'https://github.com/student1311/giphs-app',
+    demo: 'https://student1311.github.io/giphys_app/build/',
+    code: 'https://github.com/student1311/giphys_app',
     title: 'Giphy-app',
     img: './img/giph.png'
   },
@@ -43,10 +43,10 @@ let content = [
     tagsStr: 'html/css | ajax',
     tags: ['html/css', 'ajax'],
     id: 5,
-    desc: 'Landing page',
+    desc: 'landing page, submit form data in srm',
     demo: 'https://student1311.github.io/video/',
     code: 'https://github.com/student1311/video',
-    title: 'Landing',
+    title: 'Landing page',
     img: './img/video.png'
   },
   {
@@ -56,7 +56,7 @@ let content = [
     desc: 'using animation.css, gulp, svg animation',
     demo: 'https://student1311.github.io/graph/',
     code: 'https://github.com/student1311/graph',
-    title: 'Landing',
+    title: 'Landing page',
     img: './img/graph.png'
   },
   {
@@ -66,7 +66,7 @@ let content = [
     desc: 'set google data sheets,sms verification,',
     demo: 'https://student1311.github.io/test/',
     code: 'https://github.com/student1311/test',
-    title: 'Landing',
+    title: 'Landing page',
     img: './img/test.png'
   }
 ];
