@@ -13,7 +13,7 @@ let content = [
     tagsStr: 'react',
     tags: 'react',
     id: 2,
-    desc: 'portfolio',
+    desc: 'portfolio, using React Hooks',
     demo: 'https://student1311.github.io/portfolio/build/',
     code: 'https://github.com/student1311/portfolio',
     title: 'This portfolio',
@@ -33,10 +33,10 @@ let content = [
     tagsStr: 'react',
     tags: ['react'],
     id: 4,
-    desc: 'simple todo-app,using propTypes',
-    demo: 'https://student1311.github.io/todo-app/build/',
-    code: 'https://github.com/student1311/todo-app',
-    title: 'Todo-app',
+    desc: 'simple todo-app,using redux, propTypes',
+    demo: 'https://student1311.github.io/todo-app_redux/build/',
+    code: 'https://github.com/student1311/todo-app_redux',
+    title: 'Todo-app-redux',
     img: './img/todo.png'
   },
   {

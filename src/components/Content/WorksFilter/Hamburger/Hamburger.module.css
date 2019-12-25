@@ -1,0 +1,24 @@
+.Hamburger {
+  z-index: 1;
+  position: absolute;
+  display: none;
+  z-index: 9999;
+  transform: rotate(0deg);
+  right: 20px;
+  top: -29px;
+}
+
+.Hamburger:hover {
+  cursor: pointer;
+}
+
+.Hamburger.mobile {
+  position: fixed;
+  top: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+  .Hamburger {
+    display: block;
+  }
+}

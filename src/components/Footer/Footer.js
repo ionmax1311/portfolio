@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = () => {
   return (
     <footer className={styled.footer}>
-      <p>
+      <p className={styled.copy}>
         <span dangerouslySetInnerHTML={{ __html: '&copy;' }} />
         Maksim Ionash
       </p>

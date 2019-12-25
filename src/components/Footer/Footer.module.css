@@ -12,7 +12,7 @@
 
 .github {
   font-size: 20px;
-  color: #24292e;
+  color: #a6acb3;
   margin-left: 15px;
 }
 .footer p {
@@ -25,4 +25,8 @@ a svg {
 
 a svg:hover {
   transform: translateY(-4px);
+}
+
+.copy {
+  color:#eee;
 }

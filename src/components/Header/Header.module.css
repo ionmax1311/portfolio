@@ -6,10 +6,20 @@
   flex-wrap: wrap;
 }
 .title {
-  width: 215px;
+  /* width: 215px; */
+  color: orange;
 }
+
+.subTitle {
+  color: #eee;
+}
+.wrapTitle {
+  margin-bottom: 20px;
+}
+
 .text {
   max-width: 310px;
   width: 100%;
   text-align: left;
+  color: #eee;
 }

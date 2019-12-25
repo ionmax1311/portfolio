@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from './WorksFilter.module.css';
-import { faFlask } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import WorksItem from './WorksItem/WorksItem';
+import Hamburger from './Hamburger/Hamburger';
 
 const WorksFilter = props => {
+  const [open, setOpen] = useState(false);
   const [filteredItems, setFilteredItems] = React.useState(props.content);
   const [curId, setCurId] = React.useState(1);
   const filterTitle = [
@@ -15,12 +16,20 @@ const WorksFilter = props => {
     { id: 5, title: 'bootstrap' }
   ];
 
+  const handleClick = () => {
+    setOpen(!open);
+  };
+
   const filterItems = filterTitle.map(item => (
     <li
-      className={curId === item.id ? styled.activeItem : ''}
+      className={
+        curId === item.id
+          ? `${styled.activeItem} waves-effect orange btn `
+          : 'waves-effect   btn'
+      }
       onClick={() => {
         setCurId(item.id);
-
+        setOpen(false);
         setFilteredItems(() => {
           if (item.title === 'all') {
             return props.content;
@@ -37,14 +46,34 @@ const WorksFilter = props => {
   ));
 
   return (
-    <div>
-      <div className={styled.wrapTitleItem}>
+    <div className={styled.filterWrap}>
+      <Hamburger
+        menuClicked={handleClick}
+        isOpen={open}
+        width={22}
+        height={18}
+        strokeWidth={1}
+        rotate={0}
+        color="#fff"
+        borderRadius={5}
+        animationDuration={0.3}
+      />
+
+      <div
+        className={
+          open
+            ? ` ${styled.wrapTitleItem} ${styled.mobile}`
+            : `${styled.wrapTitleItem}`
+        }
+      >
         <div className={styled.titleWrap}>
-          <FontAwesomeIcon icon={faFlask} />
           <h3 className={styled.title}>works</h3>
         </div>
         <ul className={styled.titleFilterWrap}>{filterItems}</ul>
       </div>
+
+      <div className={styled.line} />
+
       <div className={styled.contentWrap}>
         <WorksItem content={filteredItems} />
       </div>

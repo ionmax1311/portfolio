@@ -36,7 +36,7 @@ const WorksItem = props => {
 
           <div className={styled.wrapButtons}>
             <a
-              className={styled.button}
+              className={`${styled.button} waves-effect  btn `}
               type="button"
               target="_blank"
               rel="noopener noreferrer"
@@ -46,7 +46,7 @@ const WorksItem = props => {
             </a>
 
             <a
-              className={styled.button}
+              className={`${styled.button} waves-effect  btn `}
               type="button"
               target="_blank"
               rel="noopener noreferrer"
@@ -60,7 +60,7 @@ const WorksItem = props => {
         <img src={item.img} alt="img" width="200" height="150" />
 
         <span className={styled.tagsItem}>{item.tagsStr} </span>
-        {item.title}
+        <p className={styled.title}>{item.title}</p>
       </div>
     );
   });

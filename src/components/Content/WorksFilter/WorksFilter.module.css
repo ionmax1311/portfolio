@@ -1,11 +1,11 @@
-.titleWrap {
-  display: flex;
-  justify-content: space-between;
-  width: 100px;
-  align-items: center;
-}
+
 .title {
   margin: 0;
+  color: #eee;
+}
+
+.filterWrap {
+  position: relative;
 }
 
 .wrapTitleItem {
@@ -18,21 +18,75 @@
   display: flex;
   list-style: none;
   flex-wrap: wrap;
+  margin-bottom: 5px;
 }
 
 .titleFilterWrap li {
   margin-left: 15px;
   cursor: pointer;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   background: #ccc;
   transition: 0.5s;
   margin-bottom: 10px;
 }
 
 .titleFilterWrap li:hover {
-  background: #bb5;
+  background: #ff9800;
 }
 
 .titleFilterWrap .activeItem {
-  background: #bb5;
+  background: #ff9800;
+}
+
+.Hamburger .wrapTitleItem.mobile {
+  position: fixed;
+  top: 20px;
+}
+
+.wrapTitleItem.mobile {
+  transform: translateX(0);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: orange;
+}
+
+@media only screen and (max-width: 650px) {
+  .wrapTitleItem {
+    transform: translateX(-160px);
+    flex-direction: column;
+
+    position: absolute;
+  }
+  .titleFilterWrap {
+    flex-direction: column;
+    /* margin-bottom: 20%; */
+    max-width: 110px;
+    margin: 0 auto auto;
+  }
+  .titleFilterWrap li {
+    margin-left: 0;
+  }
+  .line {
+    margin-top: 40px;
+  }
+
+  .titleWrap {
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+  .titleWrap h3 {
+    text-align: center;
+  }
 }
