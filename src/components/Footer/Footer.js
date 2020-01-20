@@ -19,7 +19,7 @@ const Footer = () => {
           <FontAwesomeIcon className={styled.linkedin} icon={faLinkedin} />
         </a>
         <a
-          href="https://github.com/student1311"
+          href="https://github.com/ionmax1311"
           target="_blank"
           rel="noopener noreferrer"
         >

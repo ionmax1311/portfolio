@@ -8,11 +8,7 @@ const Header = () => {
       <div className={styled.wrapTitle}>
         <h4 className={styled.title}>Maksim Ionash</h4>
         <Typed
-          strings={[
-            'WEB CODER',
-            'REACT JUNIOR DEWELOPER',
-            'FRONTEND DEVELOPER'
-          ]}
+          strings={['WEB CODER', 'REACT DEVELOPER', 'FRONTEND DEVELOPER']}
           className={styled.subTitle}
           typeSpeed={90}
           backSpeed={20}
