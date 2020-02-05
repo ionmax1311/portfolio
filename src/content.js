@@ -64,10 +64,10 @@ let content = [
     tags: ['html/css', 'ajax', 'bootstrap'],
     id: 7,
     desc: 'set google data sheets,sms verification,',
-    demo: 'https://ionmax1311.github.io/test/',
-    code: 'https://github.com/ionmax1311/test',
+    demo: 'https://online-investor.top/',
+    code: 'https://github.com/ionmax1311/investor',
     title: 'Landing page',
-    img: './img/test.png'
+    img: './img/investor.png'
   }
 ];
 
